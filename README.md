@@ -1,11 +1,5 @@
 # UE5-GPT-Localization
 利用 openai 提供的 API 完成虚幻引擎内文本本地化功能。
-
-数据格式：
-|Key|Source|Translation|
-|:--:|:-:|:-:|
-|A1|test1|   |
-|A2|test2|123|
  - - -
 # 快速开始
 1. 项目内 test 文件夹模拟了一个完整的工作环境。
@@ -36,10 +30,12 @@
 
 1. 添加人工翻译表 Translated.tab 
 + ![Translated](./img/Translated.jpg)
-1. 添加专属名词表 Glossary.tab
+2. 添加专属名词表 Glossary.tab
 + ![Glossary](./img/Glossary.jpg)
-1. 添加模块配置表 module.ini
+3. 添加模块配置表 module.ini
 + ![module](./img/module.jpg)
+4. 添加翻译配置表 TransConfig.ini  
++ 直接 copy test目录下的文件即可
 # 使用
 ### 1. 确保配置没有问题
 ### 2. 命令
