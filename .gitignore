@@ -1,0 +1,23 @@
+# compiled output
+/dist
+/out
+
+# dependencies
+/node_modules
+
+# IDE settings
+/.vscode
+/.idea
+
+# TypeScript cache
+/.tscache
+
+Dictionary.tab
+
+Trans.tab
+
+Game.xlsx
+
+dictionary.xlsx
+
+GPT.tab

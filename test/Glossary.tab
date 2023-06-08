@@ -1,0 +1,7 @@
+Module	SourceText	TranslateText
+battle	测试数据1	battle 翻译数据1
+lobby	测试数据1	lobby 翻译数据1
+battle	模块数据	battle 的模块数据替换
+test	模块数据	common 的模块数据替换
+common	模块数据	common 的模块数据替换
+common	时空	テスト
