@@ -67,7 +67,17 @@ trans
         CombineTranslatedData.main(opt);
     });
 
-
+trans
+    .command("test")
+    .description("combine translated data")
+    .action(async ()=> {
+        const opt = trans.opts();
+        console.log("start Translate！");
+        FilterGameData.main(opt);
+        await Translator.main(opt);
+        CombineTranslatedData.main(opt);
+        console.log("OVER！！");
+    });
 
 trans.parse();
 

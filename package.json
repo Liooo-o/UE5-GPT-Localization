@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
-    "exc": "yarn && yarn ts-node ."
+    "exc": "yarn && yarn ts-node .",
+    "example": "yarn run exc test -p ./test"
   },
   "author": "",
   "license": "ISC",
