@@ -4,7 +4,7 @@
   "main": "src/index.ts",
   "scripts": {
     "exc": "yarn && yarn ts-node .",
-    "example": "yarn run exc test -p ./test"
+    "example": "yarn run exc translate -p ./test"
   },
   "author": "",
   "license": "ISC",

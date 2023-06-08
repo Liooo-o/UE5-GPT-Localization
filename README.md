@@ -7,6 +7,12 @@
 |A1|test1|   |
 |A2|test2|123|
  - - -
+# 快速开始
+1. 项目内 test 文件夹模拟了一个完整的工作环境。
+2. 控制台输入如下指令 ，即可使用 test 目录下的工作环境开始一次翻译流程。
+   `yarn run example`
+3. test目录下的 GameTranslate.tab 为翻译好的文本文件。
+4. 运行过程中生成的中间文件将存放在 test/TempFile 中。
 # 安装
 ### 1. 安装 node.js
 1. Node.js 的官方网站 https://nodejs.org/。
@@ -30,21 +36,23 @@
 
 1. 添加人工翻译表 Translated.tab 
 + ![Translated](./img/Translated.jpg)
-2. 添加专属名词表 Glossary.tab
+1. 添加专属名词表 Glossary.tab
 + ![Glossary](./img/Glossary.jpg)
-3. 添加模块配置表 module.ini
+1. 添加模块配置表 module.ini
 + ![module](./img/module.jpg)
 # 使用
-### 1. 确保第一步的配置没有问题
+### 1. 确保配置没有问题
 ### 2. 命令
-+ 脚本共 3 个 Action ：
++ 脚本共 4 个 Action ：
 1. filter
 `yarn run exc filter -p "你的本地化工作路径"`
-2. runGPT
+1. runGPT
 `yarn run exc runGPT -p "你的本地化工作路径"`
-3. combine
+1. combine
 `yarn run exc combine -p "你的本地化工作路径"`
-+ 三个命令分别对应如下工作流 
+1. translate
+`yarn run exc translate -p "你的本地化工作路径"`
++ 前三个命令分别对应如下工作流 
 + ![flow](./img/flow.jpg)
 + cmd 命令一览
 + ![config](./img/config.jpg) 
@@ -55,6 +63,6 @@
   e.g.   
   1. `yarn run exc runGPT -p "你的本地化工作路径" -cs 100 -cc 10`
   这个示例修改了每次请求的翻译的总字符数量不超过 100 个，并且总短句和词汇数量不超过 10 个
-  2. `yarn run exc runGPT -p "你的本地化工作路径" -cd 5000 -tl 10000`
+  1. `yarn run exc runGPT -p "你的本地化工作路径" -cd 5000 -tl 10000`
   这个示例修改请求间隔为 5 秒，每个请求时间不超过 10 秒，超过十秒的请求直接失效，根据需求自行修改
 + ./test 路径下有完整的测试环境
