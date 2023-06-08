@@ -68,7 +68,7 @@ trans
     });
 
 trans
-    .command("test")
+    .command("translate")
     .description("combine translated data")
     .action(async ()=> {
         const opt = trans.opts();
